@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*
+    обнуление всех отступов во всех элементах страницы
+    */
+}
+
+a {
+    text-decoration: none;
+    /*наличие или отсутствие подчёркивания, НАДчёркивания, зачёркивания и пр сопровождающиъ линий*/
+}
+
+h1 {
+    color: #222222;
+    /*цвет текста внутри блока*/
+    font-size: 28px;
+    line-height: 36px;
+    /*высота строки, строчного блока - по сути, задаёт междустрочный интевал как в ворде*/
+    font-weight: bold;
+    /*тяжесть начертания текста - тонкий, нормальный, дирный*/
+}
+
+.main-frame {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin-left: auto;
+    /*сочетание margin left + right со свойством auto даёт выравнивание по центру*/
+    margin-right: auto;
+    width: 1000px;
+}
+
+.header {
+    background: linear-gradient(rgb(246, 255, 0), rgb(255, 140, 0));
+    text-align: center;
+    margin: 15px 0px 0px;
+    /*внешние отступы*/
+    padding: 15px 5px;
+    /*внутренние отступы*/
+    font-weight: bold;
+    font-style: italic;
+    /*стиль шрифта - курсив или нет */
+}
+
+.navigation {
+    background-color: rgb(252, 255, 214);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 0px;
+    color: cornflowerblue;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.content {
+    border: solid 1px rgb(255, 196, 0);
+    padding: 5px 15px 5px 15px;
+    text-align: justify;
+}
+
+.title {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.paragraph {
+    color: blue;
+    padding: 10px 0px;
+}
+
+.links {
+    font-weight: bold;
+}
+
+.paragraph a {
+    color: brown;
+    text-transform: uppercase;
+    text-decoration: wavy;
+    text-decoration-line: underline;
+}
+
+.product-block {
+    border: 1px solid black;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.product-img {
+    border: 1px solid black;
+    display: block;
+    width: 150px;
+}
+
+.product-discribe {
+    border: 1px solid black;
+    display: block;
+    align-content: center;
+}
+
+.product-name {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+}
