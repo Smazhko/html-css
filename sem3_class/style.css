@@ -81,16 +81,19 @@ body {
 }
 
 .content {
+    /*параграф с описанием*/
     color: #FFF;
     font-size: 18px;
     font-weight: 600;
     line-height: 160%;
-    /* 28.8px */
     opacity: 0.7;
+    /*верхний и нижний внешние края*/
     margin: 40px 0;
 }
 
 .top_buttons {
+    /*блок к с кнопками 
+    с позиционированием кнопок*/
     display: flex;
     align-items: flex-start;
     gap: 20px;
@@ -98,28 +101,43 @@ body {
 }
 
 .btn {
+    /*внешние параметры кнопки*/
     height: 57px;
-    padding: 15px 30px;
-    gap: 10px;
     border-radius: 5px;
     border: 0;
     background: #3A68B8;
+    /*шрифт надписи*/
     color: #FFF;
     font-size: 20px;
     font-weight: 600;
-    /* align-items: center; */
+    /*внутренние отступы и выравнивание содержимого - 
+    картинки и надписи*/
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.btn:hover {
+    background: #4b85e8;
+}
+
+.btn:active {
+    background: #244174;
 }
 
 .btn_icon {
-    vertical-align: text-top;
+    /*отступ между иконкой и надписью*/
     padding-right: 10px;
 }
 
 .top_content_img {
+    /*никаких параметров можно было не задавать,
+    но пусть класс будет на всякий случай*/
     width: 414px;
 }
 
 .top_footer {
+    /*блок-панель с логотипами*/
     height: 15vh;
     display: flex;
     justify-content: space-between;
