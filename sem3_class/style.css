@@ -117,9 +117,15 @@ body {
     align-items: center;
 }
 
+
+/*цвет кнопки при наведении*/
+
 .btn:hover {
     background: #4b85e8;
 }
+
+
+/*цвет кнопки при нажатии*/
 
 .btn:active {
     background: #244174;
