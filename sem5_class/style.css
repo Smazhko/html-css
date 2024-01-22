@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Open sans", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+:root {
+    /* плавная прокрутка
+    scroll-behavior: smooth;
+    на странице не заметна, т.к. не работают ссылки
+    
+    также применяется медиазапрос с  этой же целью 
+    (но, наверное, нужно подключать бустрап)*/
+    /* @media (prefers-reduced-motion: no-preference) {
+        :root {
+           scroll-behavior: smooth;
+       }
+    } */
+}
+
+.center {
+    /*хитрая формула для расчёта отступов, 
+    чтоб фон оставался фоном, а контент
+    был по середине в пределах заданной области
+    ТУТ - 1150px, поэтому 1150 : 2 = 575*/
+    padding-left: calc(50vw - 575px);
+    padding-right: calc(50vw - 575px);
+}
+
+body {
+    background-color: #020A18;
+}
+
+.scrollable {
+    /*обеспечиваем прокрутку экранами:
+    эти свойства у главного блока, содержащего 
+    внутренние прокручиваемые блоки*/
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.scrollable-block {
+    /*обеспечиваем прокрутку экранами:*/
+    /*добавим этот класс блокам, которые 
+    содержат информацию на весь экран*/
+    scroll-snap-align: start;
+    /*start - примагничивание будет по верхнему краю блока*/
+    scroll-snap-stop: always;
+    /*always - примагничивание будет всегда, без промежуточных позиций*/
+}
+
+.top {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.important_backround {
+    /*в макете у шапки есть свойство 
+        opacity: 0.02;
+    но с такими цифрами становится прозрачным весь блок, 
+    в том числе текст, что недопустимо.
+    выход - пересчёт прозрачности в RGBA цветах градиента
+    было =>
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) -41.9%, #FFF 260.24%);
+    стало =>
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) -41.9%, rgba(255, 255, 255, 0) 260.24%);
+    никто не отличит от оригинала ^_^
+    */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) -41.9%, rgba(255, 255, 255, 0) 260.24%);
+    backdrop-filter: blur(100px);
+}
+
+.top_roof {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.roof_link {
+    /*для пущего сходства к страничке в HEAD подключен 
+    файл шрифта*/
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content_with_image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pre-header {
+    color: #3A68B8;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.header {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 130%;
+}
+
+.content {
+    /*параграф с описанием*/
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+    opacity: 0.7;
+    /*верхний и нижний внешние края*/
+    margin: 40px 0;
+}
+
+.top_buttons {
+    /*блок с кнопками с их позиционированием*/
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+.btn {
+    /*внешние параметры кнопки*/
+    height: 57px;
+    border-radius: 5px;
+    border: 0;
+    background: #3A68B8;
+    /*шрифт надписи*/
+    font-size: 20px;
+    font-weight: 600;
+    /*внутренние отступы и выравнивание содержимого - 
+    картинки и надписи*/
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+/*цвет кнопки при наведении*/
+
+.btn:hover {
+    background: #4b85e8;
+}
+
+
+/*цвет кнопки при нажатии*/
+
+.btn:active {
+    background: #244174;
+}
+
+.btn_icon {
+    /*отступ между иконкой и надписью*/
+    padding-right: 10px;
+}
+
+.top_content_img {
+    /*никаких параметров можно было не задавать,
+    но пусть класс будет на всякий случай*/
+    width: 414px;
+}
+
+.top_footer {
+    /*блок-панель с логотипами*/
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_footer_logo {
+    height: 59px;
+}
+
+.cards_box {
+    /* height: 100vh; */
+    background-color: #020A18;
+    margin: 20px 0 150px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    border-radius: 10px;
+    background: #132035;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.card_big {
+    /* grid-row: 2 / 4;
+    grid-column: 1 / 3; */
+    grid-area: 2 / 1 / 4 / 3;
+}
+
+.card_img {
+    height: 103px;
+}
+
+.card_img_big {
+    height: 322px;
+}
+
+.card_header {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 125%;
+    opacity: 0.7;
+    margin: 30px 0;
+}
+
+.card_header_big {
+    margin: 60px;
+}
+
+.card_content {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 160%;
+    opacity: 0.7;
+}
+
+.review_header {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.review_content {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    opacity: 0.7;
+    margin-bottom: 20px;
+    margin-right: 113px;
+}
+
+.footer {
+    margin-top: 150px;
+    padding-top: 48px;
+    padding-bottom: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 110px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.footer_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_header {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 9px;
+}
+
+.footer_address {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.footer_icon_address {
+    height: 11px;
+    margin-right: 10px;
+}
+
+.footer_about {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 100;
+    margin-top: 24px;
+}
+
+.footer_socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 15px;
+    gap: 24px;
+    margin-top: 24px;
+}
