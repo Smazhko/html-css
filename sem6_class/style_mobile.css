@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+    @media (max-width: 574px) {
     .center {
         /*344 : 2 = 172*/
         padding-left: calc(50vw - 172px);
@@ -7,5 +7,90 @@
     .top_navigation {
         height: 64px;
         margin-bottom: 64px;
+        flex-wrap: wrap;
+        gap: 16px;
     }
-}
+    .roof_link {
+        font-size: 14px;
+    }
+    .content_with_image {
+        justify-content: center;
+    }
+    .content_with_image_textblock {
+        text-align: center;
+        justify-content: center;
+    }
+    .textblock_pre-header {
+        font-size: 14px;
+    }
+    .textblock_header {
+        font-size: 28px;
+    }
+    .content_with_image_buttons {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logoes {
+        margin-top: 128px;
+        margin-bottom: 96px;
+        padding-bottom: 108px;
+    }
+    .logoes_pair {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .review_header {
+        font-size: 24px;
+        text-align: center;
+    }
+    .review_content {
+        text-align: center;
+    }
+    .review_content_rightmargin {
+        margin-right: 0px;
+    }
+    .cards_box {
+        margin: 96px 0;
+    }
+    .card {
+        margin: 0 auto;
+        width: 282px;
+    }
+    .footer {
+        margin-top: 96px;
+        padding-top: 113px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+    .footer_info {
+        width: 300px;
+        justify-content: center;
+    }
+    .order1 {
+        order: 0;
+    }
+    .order2 {
+        order: -1;
+    }
+    .order3 {
+        order: 1;
+    }
+    .footer_address {
+        text-align: center;
+    }
+    .footer_header {
+        text-align: center;
+    }
+    .footer_about {
+        text-align: center;
+    }
+    .footer_socials {
+        justify-content: center;
+    }

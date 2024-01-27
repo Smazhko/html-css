@@ -1,19 +1,50 @@
 @media (max-width: 1200px) {
     .center {
-        /*768 : 2 = 384*/
-        padding-left: calc(50vw - 384px);
-        padding-right: calc(50vw - 384px);
+        /*768 : 2 = 287*/
+        padding-left: calc(50vw - 287px);
+        padding-right: calc(50vw - 287px);
     }
-    .top {
-        height: 100%;
+    /*********************************/
+    .logoes {
+        /*блок-панель с логотипами*/
+        padding-bottom: 120px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
     }
+    .logoes_pair {
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+    /*********************************/
     .content_with_image {
+        justify-content: center;
         flex-wrap: wrap;
     }
-    .cards_box {
-        grid-template: repeat(3, 1fr) / 1fr;
+    /*********************************/
+    .review_textblock {
+        max-width: 460px;
     }
+    /*********************************/
+    .cards_box {
+        grid-template: repeat(3, 1fr) / auto;
+    }
+    /*********************************/
+    .card {
+        margin: 0 auto;
+        width: 302px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) -41.9%, rgba(255, 255, 255, 0.05) 115.68%);
+        backdrop-filter: blur(100px);
+    }
+    /********************************/
     .hidden_card {
         display: none;
     }
+    /*********************************/
+    .footer {
+        padding: 48px 40px 45px;
+        flex-wrap: wrap;
+    }
+    /********************************/
 }
