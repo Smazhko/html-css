@@ -1,0 +1,19 @@
+@media (max-width: 1200px) {
+    .center {
+        /*768 : 2 = 384*/
+        padding-left: calc(50vw - 384px);
+        padding-right: calc(50vw - 384px);
+    }
+    .top {
+        height: 100%;
+    }
+    .content_with_image {
+        flex-wrap: wrap;
+    }
+    .cards_box {
+        grid-template: repeat(3, 1fr) / 1fr;
+    }
+    .hidden_card {
+        display: none;
+    }
+}

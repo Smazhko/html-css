@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .center {
+        /*344 : 2 = 172*/
+        padding-left: calc(50vw - 172px);
+        padding-right: calc(50vw - 172px);
+    }
+    .top_navigation {
+        height: 64px;
+        margin-bottom: 64px;
+    }
+}

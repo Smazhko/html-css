@@ -6,6 +6,58 @@
     */
 }
 
+.all-page {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.fullscreen-item {
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigtext {
+    padding: auto 0;
+    color: rgb(15, 130, 21);
+    font-size: 100px;
+    text-align: center;
+}
+
+.box {
+    color: #fff;
+    font-size: 5rem;
+    width: 250px;
+    height: 400px;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.item {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.item:nth-child(1) {
+    background-color: #ff4e4e;
+}
+
+.item:nth-child(2) {
+    background-color: #4effaf;
+}
+
+.item:nth-child(3) {
+    background-color: #ff4ef9;
+}
+
 a {
     text-decoration: none;
     /*наличие или отсутствие подчёркивания, НАДчёркивания, зачёркивания и пр сопровождающиъ линий*/

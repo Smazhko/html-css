@@ -57,12 +57,13 @@ body {
     scroll-padding-bottom: 100px;
 }
 
-.top {
+
+/* .top {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+} */
 
 .important_backround {
     /*в макете у шапки есть свойство 
@@ -80,13 +81,14 @@ body {
     backdrop-filter: blur(100px);
 }
 
-.top_roof {
+.top_navigation {
     height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 40px;
+    margin-bottom: 160px;
 }
 
 .roof_link {
@@ -100,6 +102,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .pre-header {
@@ -181,9 +184,11 @@ body {
     height: 15vh;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .top_footer_logo {
+    display: inline-block;
     height: 59px;
 }
 
