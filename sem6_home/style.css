@@ -4,10 +4,6 @@
     text-decoration: none;
 }
 
-a:visited {
-    color: #6F6E6E;
-}
-
 .center {
     /*1140 : 2 = 570*/
     padding-left: calc(50vw - 570px);
