@@ -6,36 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML и CSS семинары</title>
     <style>
-        .custom-link {
+        * {
+            margin: 0;
+            padding: 0;
             text-decoration: none;
-            display: block;
-            margin: 10px 0;
-            background: radial-gradient(ellipse closest-side, orange, transparent);
-            text-align: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 30px;
-            color: brown;
         }
         
-        .custom-link:hover {
-            font-weight: bolder;
+        .center {
+            padding-left: calc(50vw - 400px);
+            padding-right: calc(50vw - 400px);
         }
         
         .content-box {
             display: flex;
             flex-direction: column;
-            margin: 50px auto;
+            margin: 20px 0 100px;
             width: 800px;
             align-items: center;
         }
         
+        .content-box a {
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+            background: radial-gradient(ellipse closest-side, orange, transparent);
+            text-align: center;
+            font-size: 25px;
+            color: brown;
+        }
+        
+        .content-box a:hover {
+            font-weight: bolder;
+        }
+        
+        .useful-links {
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+        }
+        
+        .lesson-contents__list {
+            list-style-type: lower-greek;
+        }
+        
+        .lesson-contents__list li {
+            margin: 10px 0;
+        }
+        
+        .useful-links a {
+            text-decoration: none;
+            text-align: left;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            color: rgb(10, 133, 210);
+        }
+        
         @media (max-width: 1200px) {
+            .center {
+                padding-left: calc(50vw - 225px);
+                padding-right: calc(50vw - 225px);
+            }
             .content-box {
                 width: 550px;
             }
         }
         
         @media (max-width: 600px) {
+            .center {
+                padding-left: calc(50vw - 175px);
+                padding-right: calc(50vw - 175px);
+            }
             .content-box {
                 width: 350px;
             }
@@ -44,17 +85,31 @@
 </head>
 
 <body>
-    <div class="content-box">
-        <a class="custom-link" href="sem1_class/index.html">СЕМИНАР 1 (класс)</a>
-        <a class="custom-link" href="sem1_home/index.html">СЕМИНАР 1 (домашка)</a>
-        <a class="custom-link" href="sem2_class/index.html">СЕМИНАР 2 (класс)</a>
-        <a class="custom-link" href="sem2_home/index.html">СЕМИНАР 2 (домашка)</a>
-        <a class="custom-link" href="sem3_class/index.html">СЕМИНАР 3,4 - Figma, макеты, блоки, FLEX (класс)</a>
-        <a class="custom-link" href="sem3_home/index.html">СЕМИНАР 3,4 - Figma, макеты, блоки, FLEX (домашка)</a>
-        <a class="custom-link" href="sem5_class/index.html">СЕМИНАР 5 - FLEX, GRID весь тёмный макет (класс)</a>
-        <a class="custom-link" href="sem5_home/index.html">СЕМИНАР 5 - FLEX, GRID весь белый макет (домашка)</a>
-        <a class="custom-link" href="sem6_class/index.html">СЕМИНАР 6 - адаптив - планшет, телефон (тёмный) (класс)</a>
-        <a class="custom-link" href="sem6_home/index.html">СЕМИНАР 6 - макет магазина одежды (домашка)</a>
+    <div class="content-box center">
+        <a href="sem1_class/index.html">СЕМИНАР 1 (класс)</a>
+        <a href="sem1_home/index.html">СЕМИНАР 1 (домашка)</a>
+        <a href="sem2_class/index.html">СЕМИНАР 2 (класс)</a>
+        <a href="sem2_home/index.html">СЕМИНАР 2 (домашка)</a>
+        <a href="sem3_class/index.html">СЕМИНАР 3,4 - Figma, макеты, блоки, FLEX (класс)</a>
+        <a href="sem3_home/index.html">СЕМИНАР 3,4 - Figma, макеты, блоки, FLEX (домашка)</a>
+        <a href="sem5_class/index.html">СЕМИНАР 5 - FLEX, GRID весь тёмный макет (класс)</a>
+        <a href="sem5_home/index.html">СЕМИНАР 5 - FLEX, GRID весь белый макет (домашка)</a>
+        <a href="sem6_class/index.html">СЕМИНАР 6 - адаптив - десктоп, планшет, телефон <br>(тёмный макет) (класс)</a>
+        <a href="sem6_home/index.html">СЕМИНАР 6 - Макет магазина одежды (позиционирование fixed, absolute, relative) (домашка)</a>
+    </div>
+    <div class="useful-links center">
+        <b>ПОЛЕЗНЫЕ ССЫЛКИ:</b>
+        <ul class="lesson-contents__list">
+            <li class="lesson-contents__list-item"><a class="lesson-contents__download-row" href="https://habr.com/ru/companies/ruvds/articles/567148/" target="_blank">Тут десяток фреймов для веб-дизайна мышкой</a></li>
+            <li class="lesson-contents__list-item"><a class="lesson-contents__download-row" href="https://appmaster.io/ru/blog/10-luchshikh-veb-freimvorkov" target="_blank">Короткий список фреймов, отчасти дублирует сообщение, но есть несколько допов по типу Appmaster.io</a></li>
+            <li class="lesson-contents__list-item"><a class="lesson-contents__download-row" href="https://www.electronjs.org/" target="_blank">Мощный вариант комбинирующий подходы, даже Git написан на нем (если не врут, конечно)</a></li>
+            <li class="lesson-contents__list-item"><a class="lesson-contents__download-row" href="https://quintadb.ru/posts/bQLPDEj7TcuymkXX6xdDY6%7C-kak-sozdat-bazu-dannyh-dlya-sayta" target="_blank">Возможно недооцененная опция, что-то серьезное собрать не получится, но посмотреть можно</a></li>
+            <li class="lesson-contents__list-item"><a class="lesson-contents__download-row" href="https://habr.com/ru/sandbox/14484/" target="_blank">Вариант, где полсайта генерируются с базы</a></li>
+            <li class="lesson-contents__list-item"><a class="lesson-contents__download-row" href="https://new-science.ru/50-luchshih-frejmvorkov-dlya-veb-razrabotchikov/" target="_blank">Тут сборная солянка, спасибо за вопрос, узнал новые названия)</a></li>
+            <li class="lesson-contents__list-item"><a class="lesson-contents__download-row" href="https://ufchgu.ru/blog/kak-podkljuchit-bazu-dannyh-k-sajtu-prostoj-gajd" target="_blank">Пошаговое создание и подключение получение данных с базы для сайта</a></li>
+            <li class="lesson-contents__list-item"><a class="lesson-contents__download-row" href="http://www.mysql.ru/docs/tkachenko/" target="_blank">Краткое вступление с парой примеров по PHP и SQL</a></li>
+            <li class="lesson-contents__list-item"><a class="lesson-contents__download-row" href="https://habr.com/ru/articles/84654/" target="_blank">Раз уж зашла речь о html5, то вот возможности работы с базой силами браузера (но база всё равно нужна)</a></li>
+        </ul>
 
     </div>
 </body>
