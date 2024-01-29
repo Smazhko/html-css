@@ -41,17 +41,7 @@
         }
         
         .useful-links {
-            display: flex;
-            flex-direction: column;
-            width: 800px;
-        }
-        
-        .lesson-contents__list {
-            list-style-type: lower-greek;
-        }
-        
-        .lesson-contents__list li {
-            margin: 10px 0;
+            margin-top: 40px;
         }
         
         .useful-links a {
@@ -60,6 +50,15 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 14px;
             color: rgb(10, 133, 210);
+            background: none;
+        }
+        
+        .lesson-contents__list {
+            list-style-type: lower-greek;
+        }
+        
+        .lesson-contents__list li {
+            margin: 10px 0;
         }
         
         @media (max-width: 1200px) {
@@ -80,6 +79,9 @@
             .content-box {
                 width: 350px;
             }
+            .content-box a {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
@@ -96,21 +98,21 @@
         <a href="sem5_home/index.html">СЕМИНАР 5 - FLEX, GRID весь белый макет (домашка)</a>
         <a href="sem6_class/index.html">СЕМИНАР 6 - адаптив - десктоп, планшет, телефон <br>(тёмный макет) (класс)</a>
         <a href="sem6_home/index.html">СЕМИНАР 6 - Макет магазина одежды (позиционирование fixed, absolute, relative) (домашка)</a>
-    </div>
-    <div class="useful-links center">
-        <b>ПОЛЕЗНЫЕ ССЫЛКИ:</b>
-        <ul class="lesson-contents__list">
-            <li class="lesson-contents__list-item"><a class="lesson-contents__download-row" href="https://habr.com/ru/companies/ruvds/articles/567148/" target="_blank">Тут десяток фреймов для веб-дизайна мышкой</a></li>
-            <li class="lesson-contents__list-item"><a class="lesson-contents__download-row" href="https://appmaster.io/ru/blog/10-luchshikh-veb-freimvorkov" target="_blank">Короткий список фреймов, отчасти дублирует сообщение, но есть несколько допов по типу Appmaster.io</a></li>
-            <li class="lesson-contents__list-item"><a class="lesson-contents__download-row" href="https://www.electronjs.org/" target="_blank">Мощный вариант комбинирующий подходы, даже Git написан на нем (если не врут, конечно)</a></li>
-            <li class="lesson-contents__list-item"><a class="lesson-contents__download-row" href="https://quintadb.ru/posts/bQLPDEj7TcuymkXX6xdDY6%7C-kak-sozdat-bazu-dannyh-dlya-sayta" target="_blank">Возможно недооцененная опция, что-то серьезное собрать не получится, но посмотреть можно</a></li>
-            <li class="lesson-contents__list-item"><a class="lesson-contents__download-row" href="https://habr.com/ru/sandbox/14484/" target="_blank">Вариант, где полсайта генерируются с базы</a></li>
-            <li class="lesson-contents__list-item"><a class="lesson-contents__download-row" href="https://new-science.ru/50-luchshih-frejmvorkov-dlya-veb-razrabotchikov/" target="_blank">Тут сборная солянка, спасибо за вопрос, узнал новые названия)</a></li>
-            <li class="lesson-contents__list-item"><a class="lesson-contents__download-row" href="https://ufchgu.ru/blog/kak-podkljuchit-bazu-dannyh-k-sajtu-prostoj-gajd" target="_blank">Пошаговое создание и подключение получение данных с базы для сайта</a></li>
-            <li class="lesson-contents__list-item"><a class="lesson-contents__download-row" href="http://www.mysql.ru/docs/tkachenko/" target="_blank">Краткое вступление с парой примеров по PHP и SQL</a></li>
-            <li class="lesson-contents__list-item"><a class="lesson-contents__download-row" href="https://habr.com/ru/articles/84654/" target="_blank">Раз уж зашла речь о html5, то вот возможности работы с базой силами браузера (но база всё равно нужна)</a></li>
-        </ul>
 
+        <div class="useful-links">
+            <b>ПОЛЕЗНЫЕ ССЫЛКИ:</b>
+            <ul class="lesson-contents__list">
+                <li><a href="https://habr.com/ru/companies/ruvds/articles/567148/" target="_blank">Тут десяток фреймов для веб-дизайна мышкой</a></li>
+                <li><a href="https://appmaster.io/ru/blog/10-luchshikh-veb-freimvorkov" target="_blank">Короткий список фреймов, отчасти дублирует сообщение, но есть несколько допов по типу Appmaster.io</a></li>
+                <li><a href="https://www.electronjs.org/" target="_blank">Мощный вариант комбинирующий подходы, даже Git написан на нем (если не врут, конечно)</a></li>
+                <li><a href="https://quintadb.ru/posts/bQLPDEj7TcuymkXX6xdDY6%7C-kak-sozdat-bazu-dannyh-dlya-sayta" target="_blank">Возможно недооцененная опция, что-то серьезное собрать не получится, но посмотреть можно</a></li>
+                <li><a href="https://habr.com/ru/sandbox/14484/" target="_blank">Вариант, где полсайта генерируются с базы</a></li>
+                <li><a href="https://new-science.ru/50-luchshih-frejmvorkov-dlya-veb-razrabotchikov/" target="_blank">Тут сборная солянка, спасибо за вопрос, узнал новые названия</a></li>
+                <li><a href="https://ufchgu.ru/blog/kak-podkljuchit-bazu-dannyh-k-sajtu-prostoj-gajd" target="_blank">Пошаговое создание и подключение получение данных с базы для сайта</a></li>
+                <li><a href="http://www.mysql.ru/docs/tkachenko/" target="_blank">Краткое вступление с парой примеров по PHP и SQL</a></li>
+                <li><a href="https://habr.com/ru/articles/84654/" target="_blank">Раз уж зашла речь о html5, то вот возможности работы с базой силами браузера (но база всё равно нужна)</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 
