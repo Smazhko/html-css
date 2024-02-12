@@ -1,0 +1,106 @@
+@media (max-width: 733px) {
+    .center {
+        /*344 : 2 = 172*/
+        padding-left: calc(50vw - 172px);
+        padding-right: calc(50vw - 172px);
+    }
+    .center2 {
+        /*734 : 2 = 367*/
+        padding-left: calc(50vw - 367px);
+        padding-right: calc(50vw - 367px);
+    }
+    .hide-in-mobile {
+        display: none;
+    }
+    .main-menu {
+        display: none;
+    }
+    .top-menu {
+        padding: 18px 16px;
+    }
+    .slogan-text {
+        font-size: 38px;
+    }
+    .text-small {
+        font-size: 20px;
+    }
+    .brandposter {
+        height: 363px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .slogan {
+        margin: 0 auto;
+    }
+    .offer-block {
+        margin-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        width: 344px;
+        gap: 32px;
+    }
+    .product-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+    }
+    .browse-button {
+        margin: 40px 0 96px;
+    }
+    .browse-button {
+        margin: 32px 0 60px;
+    }
+    .features_block {
+        padding-top: 48px;
+        padding-bottom: 81px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 48px;
+    }
+    .feature_card {
+        max-width: 345px;
+    }
+    .subscribe_block {
+        padding-top: 64px;
+        padding-bottom: 110px;
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 48px;
+    }
+    .subscribe_block::after {
+        background-size: auto 100%;
+        background-position-x: -400px;
+    }
+    .subscribe_photo img {
+        width: 91px;
+    }
+    .subsribe_input_n_button input {
+        display: inline;
+        border: none;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: #E1E1E1;
+        padding: 0 10px 0 22px;
+        height: 47px;
+        width: 215px;
+    }
+    .subsribe_input_n_button button {
+        width: 96px;
+        height: 47px;
+    }
+    .footer {
+        padding-top: 43px;
+        padding-bottom: 9px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+}
