@@ -1,61 +1,70 @@
 @media (max-width: 1535px) and (min-width: 1140px) {
-    .subscribe_block::after {
+    .my-subscribe-block::after {
         background-size: auto 100%;
     }
 }
 
 @media (max-width: 1140px) and (min-width: 734px) {
-    .center {
+    .my-center {
         /*734 : 2 = 367*/
         padding-left: calc(50vw - 367px);
         padding-right: calc(50vw - 367px);
     }
-    .center2 {
+    .my-center2 {
         /*930 : 2 = 465*/
         padding-left: calc(50vw - 465px);
         padding-right: calc(50vw - 465px);
     }
-    .hide-in-tablet {
-        display: none;
-    }
-    .top-menu {
+    .my-top-menu {
         padding-left: 32px;
         padding-right: 41px;
     }
-    .main-menu {
-        display: none;
+    .my-main-menu {
+        overflow: scroll;
     }
-    .brandposter {
+    .my-brandposter {
         height: 367px;
     }
-    .slogan {
+    .my-slogan {
         margin-top: 138px;
         margin-left: 39px;
     }
-    .slogan-text {
+    .my-slogan-text {
         font-size: 44px;
     }
-    .text-small {
+    .my-text-small {
         font-size: 24px;
     }
-    .offer-block {
+    .my-offer-block {
         margin-bottom: 110px;
         display: grid;
         grid-template: 167px 116px / 1fr 1fr 1fr;
         gap: 19px;
     }
-    .products-header-text {
+    .my-offer-pic-big {
+        height: 167px;
+    }
+    .my-offer-pic-small {
+        height: 116px;
+    }
+    .my-offer-text-container {
+        height: 167px;
+    }
+    .my-offer-text-container-small {
+        height: 116px;
+    }
+    .my-products-header-text {
         margin-bottom: 74px;
     }
-    .product-cards {
+    .my-product-cards {
         display: grid;
         grid-template: 1fr 1fr 1fr/ 1fr 1fr;
         gap: 14px;
     }
-    .browse-button {
+    .my-browse-button {
         margin: 32px 0 60px;
     }
-    .features_block {
+    .my-features-block {
         padding-top: 48px;
         padding-bottom: 64px;
         display: flex;
@@ -64,7 +73,7 @@
         justify-content: center;
         gap: 48px;
     }
-    .subscribe_block {
+    .my-subscribe-block {
         padding-top: 64px;
         padding-bottom: 219px;
         display: flex;
@@ -73,11 +82,11 @@
         justify-content: center;
         gap: 48px;
     }
-    .subscribe_block::after {
+    .my-subscribe-block::after {
         background-size: auto 100%;
         background-position-x: -300px;
     }
-    .subscribe-form {
+    .my-subscribe-form {
         padding: 0 0;
     }
 }
