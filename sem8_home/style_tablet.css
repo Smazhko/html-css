@@ -1,3 +1,9 @@
+@media (max-width: 1535px) and (min-width: 1140px) {
+    .subscribe_block::after {
+        background-size: auto 100%;
+    }
+}
+
 @media (max-width: 1140px) and (min-width: 734px) {
     .center {
         /*734 : 2 = 367*/
